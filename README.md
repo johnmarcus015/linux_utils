@@ -28,3 +28,18 @@ lsof -i:<port>
 ```shell
 kill <pid>
 ```
+
+# Git Utils
+## Ctrl + Z in git
+### Reverter uma modificação em arquivo específico que ainda não foi added e not pushed
+```shell
+git checkout -- <file_not_added>
+```
+### Reverter uma modificação em arquivo específico que já foi added e not pushed
+```shell
+git reset HEAD <file_added>
+```
+### Reverter uma modificação em arquivo específico que já foi commited e not pushed
+```shell
+git revert <hash_of_commit_to_undo>
+```
