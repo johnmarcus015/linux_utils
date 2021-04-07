@@ -21,6 +21,10 @@ url=http://localhost:8080/polling
 curl -X GET $url
 ```
 ### Encontra todos os processos rodando em uma determinada porta
+```shell
 lsof -i:<port>
+```
 #### Se quiser matar os processos, pegue o pid da resposta do código anterior e substitua no código abaixo: 
+```shell
 kill <pid>
+```
