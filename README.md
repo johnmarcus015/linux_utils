@@ -59,3 +59,20 @@ git branch -d <branch_name>
 git push <remote_alias> --delete <branch_name>
 # e.g.: git push origin --delete bugfix/1230
 ```
+# Alias
+## [Windows] Como adicionar um alias permanente para o Git Bash
+- Para adicionar um alias permanente, edite esse arquivo: **/C/Program Files/Git/etc/profile.d/aliases.sh**
+- Abra seu editor como administrador
+- Adicione seu alias e salve o arquivo
+- Abra o git bash, digite 'alias', e pronto!
+```shell
+$ alias
+alias ls='ls -F --color=auto --show-control-chars'
+alias ll='ls -l'
+```
+## [Mac/Linux] Como adicionar um alias permante para o terminal
+- Inicie o terminal
+- Digite cd ~/ para ir para o seu diretório home
+- Digite touch .bash_profile para criar um novo arquivo, se não houver um já existente.
+- Edite .bash_profile com seu editor favorito 
+- Digite . .bash_profile para recarregar .bash_profile e atualizar seus alias adicionados.
