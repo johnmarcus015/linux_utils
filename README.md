@@ -73,6 +73,10 @@ alias ll='ls -l'
 ## [Mac/Linux] Como adicionar um alias permante para o terminal
 - Inicie o terminal
 - Digite cd ~/ para ir para o seu diretório home
-- Digite touch .bash_profile para criar um novo arquivo, se não houver um já existente.
-- Edite .bash_profile com seu editor favorito 
-- Digite . .bash_profile para recarregar .bash_profile e atualizar seus alias adicionados.
+- Edite .bash_profile com seu editor favorito.
+```shell
+alias ls='ls -F --color=auto --show-control-chars'
+alias ll='ls -l'
+``` 
+**OBS:** Se o arquivo não existir, crie-o.
+- Digite ./.bash_profile para recarregar o terminal.
